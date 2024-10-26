@@ -1,6 +1,6 @@
 # BTL-web Nhóm 2 Đề tài: Xây dựng trang web bán bánh
 
-Lớp học phần: Thiết kế web
+Lớp học phần: 241IS19A01 - [THIẾT KẾ WEB - THỨ 7 CA 2]
 
 Danh sách thành viên
 
