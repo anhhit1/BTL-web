@@ -12,7 +12,7 @@
   background-position: center;
   padding: 90px 100px 70px 100px;
   box-shadow: 0px 20px 40px 0px rgba(161, 161, 161, 0.4);
-  margin-bottom: -98px;
+  margin-bottom: 50px;
   width: 1170px;
   height: 753.8px;
 }
@@ -97,8 +97,7 @@ iframe {
 }
 
 .contact-address-wrapper.trusohanoi {
-  height: 450px;
-  padding-top: 30px;
+  height: 400px;
 }
 .contact-address-content {
   padding: 50px 40px 5px 40px;
@@ -226,67 +225,70 @@ iframe {
   }
 }
 @media screen and (max-width: 768px) {
-  .contact-area{
-    margin-top:350px;
+  .contact-area {
+    margin-top: 350px;
   }
   .contact-bg {
-      padding: 30px;
-      width: 100%;
-      box-shadow: none;
-      margin-bottom: 0;
+    padding: 30px;
+    width: 100%;
+    box-shadow: none;
+    margin-bottom: 0;
   }
   .form-ten-sdt {
-      width: 100%;
-      flex-direction: column;
+    width: 100%;
+    flex-direction: column;
   }
   .width {
-      width: 100%;
+    width: 100%;
   }
   .contact-address-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .contact-address-wrapper {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
   .contact-address-wrapper ul {
-      padding-left: 0;
+    padding-left: 0;
   }
   .brand {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-      gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
   }
   .footer-container {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
-  .footer-info, .footer-gioithieu, .footer-sanpham, .footer-phanphoi {
-      width: 100%;
-      margin-bottom: 20px;
+  .footer-info,
+  .footer-gioithieu,
+  .footer-sanpham,
+  .footer-phanphoi {
+    width: 100%;
+    margin-bottom: 20px;
   }
   .contact-area {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .contact-address-content {
-      padding: 5px 5px; /* Adjust padding for better spacing */
+    padding: 5px 5px; /* Adjust padding for better spacing */
   }
   .contact-address-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
   }
   .contact-address-wrapper img {
-      display: none;
+    display: none;
   }
   /* Fix overlapping issue */
   .bookmark {
-      margin-bottom: 350px; /* Adjust this value as needed */
+    margin-bottom: 350px; /* Adjust this value as needed */
   }
   .contact-address-wrapper {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 }
