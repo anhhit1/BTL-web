@@ -598,7 +598,7 @@ h3 {
 }
 
 .hotsale-container h1 {
-  color: rgb(8, 8, 8);
+  color: #a6705b;
   font-size: 58px;
 }
 
@@ -607,7 +607,7 @@ h3 {
   font-size: 45px;
 }
 .hotsale-container p {
-  color: rgb(12, 12, 12);
+  color: #a6705b;
   text-align: left;
   font-size: 24px;
 }
@@ -686,7 +686,7 @@ h3 {
   }
 }
 
-/* QUOTES */
+
 
 
 /* BÀI VIẾT */
@@ -697,13 +697,6 @@ h3 {
   height: 950px;
   position: relative;
   top: 70px;
-}
-.news {
-  /* background-image: url(../images/bggioithieu1.png);
-  background-repeat: no-repeat;
-  background-position: 50% 0px;
-  background-size: 190px 190px; 
-  background-color: #F6EFEA; */
 }
 
 .news h2,
@@ -794,7 +787,7 @@ h3 {
   font-size: 20px;
 }
 .text-title:hover {
-  color: #80af0c;
+  color: #ab712a;
 }
 
 @media only screen and (max-width: 767px) {
