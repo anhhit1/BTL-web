@@ -6,12 +6,14 @@
   z-index: 99;
 }
 .contact-bg {
-  background-image: url(https://shtheme.org/demosd/fudee/wp-content/uploads/2020/05/counter-bg.png);
-  background-color: #f4f7fc;
+  /* background-image: url(https://shtheme.org/demosd/fudee/wp-content/uploads/2020/05/counter-bg.png); */
+  border-radius: 1%;
+  border: black 2px;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   padding: 90px 100px 70px 100px;
-  box-shadow: 0px 20px 40px 0px rgba(161, 161, 161, 0.4);
+  box-shadow: 0px 20px 40px 0px rgba(141, 140, 140, 0.4);
   margin-bottom: 50px;
   width: 1170px;
   height: 753.8px;
@@ -39,7 +41,7 @@
   width: 470px;
 }
 .wpcf7-submit {
-  background-color: #7dc642; /* Màu nền cho nút gửi */
+  background-color: #876328; /* Màu nền cho nút gửi */
   color: white; /* Màu chữ cho nút */
   border: none;
   font-family: "Signika", sans-serif;
@@ -57,7 +59,7 @@
   color: #333;
 }
 .wpcf7-submit:hover {
-  background-color: darkgreen; /* Màu khi hover */
+  background-color: rgb(159, 94, 2); /* Màu khi hover */
 }
 iframe {
   margin-bottom: -4px;
@@ -73,7 +75,8 @@ iframe {
 .contact-address-container {
   width: 1170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
 }
 
 .contact-address-wrapper ul {
@@ -90,14 +93,17 @@ iframe {
   transition: 0.3s;
 }
 .contact-address-wrapper {
-  border: 2px solid #e9e9e9;
-  width: 370px;
+  border: 2px solid rgb(247, 244, 244);
+  background-color: rgb(251, 250, 250);
+  border-radius: 17%;
+  width: 450px;
   height: 400px;
   transition: 0.3s;
 }
 
 .contact-address-wrapper.trusohanoi {
   height: 400px;
+  width: 450px;
 }
 .contact-address-content {
   padding: 50px 40px 5px 40px;
@@ -115,6 +121,9 @@ iframe {
   left: 0px;
   bottom: -24px;
 }
+.map{
+  padding-bottom: 20px;
+}
 .contact-address-content li:last-child::before {
   display: none;
 }
@@ -130,10 +139,10 @@ iframe {
   color: #363636;
 }
 .contact-address-wrapper:hover {
-  border: 2px #7dc642 solid;
+  scale: 120%;
 }
 .contact-address-wrapper a:hover {
-  color: #7dc642;
+  color: #a06109;
 }
 
 .contact-form-item {

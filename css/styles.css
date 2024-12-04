@@ -823,7 +823,7 @@ h3 {
   opacity: 1;
   border: 2px #cfc3c3 solid;
   transition: all 0.2s;
-  background-color: #7dc642;
+  background-color: #a27034;
   color: white;
   cursor: pointer;
   border-radius: 50%;
@@ -832,5 +832,5 @@ h3 {
   font-size: 24px; /* Adjust icon size */
 }
 #myBtn:hover {
-  background-color: #196d0e;
+  background-color: #694922;
 }
