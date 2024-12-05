@@ -58,7 +58,14 @@
   background: #4D4637;
   color: white;
 }
-.rau-list {
+
+.banhnua,
+.banhsinhnhat,
+.phukien {
+  display: flex;
+  margin: 40px 40px;
+}
+.banh-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -67,38 +74,33 @@
   margin-left: 70px;
 }
 
-.rau-list img {
-  width: 400px;
-  height: 450px;
+.banh-list img {
+  width: 450px;
+  height: 480px;
 }
-.banhnua,
-.banhsinhnhat,
-.phukien {
-  display: flex;
-  margin: 40px 40px;
-}
-.rauanqua {
+
+.banhsinhnhat {
   margin-top: 80px;
   margin-bottom: 50px;
 }
-.rauanqua .rau-list {
+.banhsinhnhat .banh-list {
   width: 100%;
   margin: 0px;
   margin-top: 30px;
 }
-.rauanqua h3 {
+.banhsinhnhat h3 {
   font-family: "Signika", sans-serif;
   font-size: 30px;
   text-align: center;
 }
-.rauanqua h3 a {
+.banhsinhnhat h3 a {
   color: var(--productname--color);
 }
-.rauanqua h3 a:hover {
+.banhsinhnhat h3 a:hover {
   color: #224503;
 }
 
-.rau-list p {
+.banh-list p {
   margin-top: 20px;
 }
 
@@ -155,7 +157,6 @@
   overflow-x: hidden;
   padding: 70px;
   box-sizing: border-box;
-  /* margin-bottom: 50px; */
 }
 .brand-item {
   flex: 0 0 auto;
@@ -186,4 +187,39 @@
 .contaner-product-section-3{
   display: flex;
   background-color: #F6EFEA;
+}
+
+.product-container {
+  background-color: #F6F6F6;
+  display: inline-block;
+  transition: 0.5s;
+  border-radius: 10%;
+  padding: 20px; /* Thêm khoảng cách bên trong để nhìn thoáng hơn */
+  width: 30%;
+}
+
+.product-container:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Bóng mờ nhẹ */
+  transform: scale(1.05); /* Tăng nhẹ kích thước để thêm hiệu ứng nổi */
+}
+
+.product-container p {
+  font-size: 40px;
+  text-align: left;
+  margin: 0;
+  padding-left: 10px; /* Đẩy chữ sang phải một chút */
+}
+
+.product-container .price {
+  font-family: "Signika", sans-serif;
+  font-size: 20px; /* Giảm kích thước chữ */
+  margin-top: 5px; /* Tạo khoảng cách giữa các đoạn văn */
+  padding-left: 10px; /* Canh lề đồng nhất với phần tên sản phẩm */
+}
+
+.product-container img {
+  max-width: 100%; /* Đảm bảo hình ảnh không bị vỡ */
+  height: auto;
+  display: block;
+  margin-top: 10px; /* Thêm khoảng cách giữa ảnh và chữ */
 }
