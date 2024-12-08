@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ</title>
-    <link rel="icon" href="images/logo_cake_1-removebg-preview.png" type = "image/x-icon"> <!--FAVICON-->
-    <link rel="stylesheet" href="css/lienhe.css">
+    <title>Sản phẩm - Letter to Santa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css"> 
+    <link rel="stylesheet" href="css/sanPham-letterToSanta.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/bookmark&brand.css">
     <link rel="stylesheet" href="css/root.css">
-    <!-- font header -->
+    <link rel="icon" href="images/logo_cake_1-removebg-preview.png" type = "image/x-icon">
+    <!-- link font logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
@@ -36,7 +37,7 @@
                         </li>
                         <!--Nút tìm kiếm-->
                         <li class="search">
-                            <input id="search-input" placeholder="Tìm kiếm" type="search">
+                            <input id="search-input" placeholder="Tìm kiếm " type="search">
                             <icon id="search-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#303030" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                            </icon>
@@ -102,106 +103,207 @@
            <!-- Tìm kiếm -->
            <script>
             document.getElementById('search-button').addEventListener('click', function() {
-        var query = document.getElementById('search-input').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); 
-        // normalize và loại bỏ dấu
-        
-        if (query.includes('banh')) {
-            window.location.href = 'sanpham.html';
-        } else if (query.includes('lien')) {
-            window.location.href = 'lienhe.html';
-        } else if (query.includes('nhap')) {
-            window.location.href = 'dangnhap.html';    
-        } else {
-            alert('Không có sản phẩm');
-        }
-    });
-        </script>
-        <main>			
-    <!-- SECTION -->
-    <div class="bookmark">
-        <div class="content-bookmark">
-            <div>
-                <h1>Liên Hệ</h1>
-                <h3><a href="trangchu.html">Trang chủ</a> || Liên Hệ</h3>
-            </div>
-        </div>
-    </div>
-    <!-- CÁC CHI NHÁNH -->
-    <div class="contact-address">
-        <div class="contact-address-container">
-            <div class="contact-address-wrapper" >
-                <div class="contact-address-content">
-                    <h3 class="fs36">Trụ Sở Hà Nội</h3>
-                    
-                    <ul>
-                        <li>Số 12 Chùa Bộc, Đống Đa, thành phố Hà Nội</li>
-                        <li><a href="mailto:QTVBakery@gmail.com">QTVBakery@gmail.com</a></li>
-                        <li>0987654321</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="contact-address-wrapper ">
-                <div class="contact-address-content">
-                    <h3 class="fs36">Trụ Sở HCM</h3>
-                    
-                    <ul>
-                        <li>232 Lê Lợi, Quận 1, TP.Hồ Chí Minh</li>
-                        <li><a href="mailto:QTVBakery@gmail.com">QTVBakery@gmail.com</a></li>
-                        <li>0942382453</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FORM LIÊN HỆ -->
-    <div class="lienhe">
-        <div class="contact-area">
-            <div class="contact-bg">
-                <div class="contact-content">
-                    <h3 class="fs36">Thông Tin Liên Hệ</h3>
-                    <div class="contact-form" id="contact-form">
-                        <div class="form-ten-sdt">
-                            <span class="contact-form-item error" data-after="">
-                                <input size="40" class="wpcf7-form-control width" id="input-name" aria-invalid="false"
-                                    placeholder="Tên :" value="" type="text" name="your-name" />
-                            </span>
-                            <span class="contact-form-item error">
-                                <input size="40" class="wpcf7-form-control width" id="input-phone" aria-invalid="false"
-                                    placeholder="Số điện thoại :" value="" type="text" name="your-phone" />
-                            </span>
-
-                        </div>
-                        <span class="contact-form-item error">
-                            <input size="40" class="wpcf7-form-control " id="input-email" aria-invalid="false"
-                                placeholder="Email :" value="" type="text" name="your-email" />
-                        </span>
-                        <span class="contact-form-item error">
-                            <textarea id="input-message" cols="40" rows="10" class="wpcf7-form-control "
-                                aria-required="true" aria-invalid="false" placeholder="Nhập nội dung của bạn :"
-                                name="your-message"></textarea>
-                        </span>
-                    </div>
-                    <div class="contact-button">
-                        <input class="wpcf7-form-control wpcf7-submit" id="btn-submit" type="submit" value="GỬI NGAY" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5884919834416!2d105.82623827531152!3d21.009126380635294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgVmnhu4duIE5nw6JuIEjDoG5n!5e0!3m2!1svi!2s!4v1715367973344!5m2!1svi!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-    <div></div>
-
+            var query = document.getElementById('search-input').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); 
+            // normalize và loại bỏ dấu
+            
+            if (query.includes('banh')) {
+                window.location.href = 'sanpham.html';
+            } else if (query.includes('lien')) {
+                window.location.href = 'lienhe.html';
+            } else if (query.includes('nhap')) {
+                window.location.href = 'dangnhap.html';    
+            } else {
+                alert('Không có sản phẩm');
+            }
+        });
     
-    <script src="js/brand.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="././js/brand.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        </script>
+    <!-- Letter to Santa -->
+    <!-- POP UP -->
+    <div class="modal fade" id="popupdualeo" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h4>Letter to Santa</h4>
+                    <span data-bs-target="#popupdualeo" data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#a0a1a2" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    </span> 
+                </div>
+                <div class="modal-body d-flex ">
+                    <div class="product-500g mr-20">
+                        <div class="img">
+                            <img src="images/banhSinhNhat/1-1.avif" alt="">
+                        </div>
+                        <div class="price d-flex ">
+                            <p class="price-first"data-price="735000">735.000đ</p>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button">-</button>
+                            <input type="text" class="form-control" value="0">
+                            <button class="btn btn-outline-secondary" type="button">+</button>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn">
+                        Hoàn tất
+                        <div class="total-price d-flex justify-content-center 1">
+                            <p>0</p>
+                            <p>đ</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE Letter to Santa -->
+    <div class="container mt-4">
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" style="border-radius: 10%;">
+                        <div class="carousel-item active">
+                            <img src="images/banhsinhnhat1.avif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banhSinhNhat/1-1.avif" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/banhSinhNhat/1-2.avif" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel-thumbnails mt-3">
+                    <img src="images/banhsinhnhat1.avif" class="img-thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                    <img src="images/banhSinhNhat/1-1.avif" class="img-thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img src="images/banhSinhNhat/1-2.avif" class="img-thumbnail" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3">
+                </div>
+            </div>
+            <div class="col-md-7 ">
+                <div class="product-title">
+                    <div class=" d-flex  justify-content-between ">
+                        <h2 class="">Letter to Santa</h2>
+                        
+
+                    </div>
+                    <div class=" d-flex  justify-content-between "> 
+                        <div class="fw-bold-re" >
+                            Sô-cô-la, Dâu rừng & Vani <br> <p style="color: #A6705B;"><b>735.000đ</b></p>
+                        </div>
+                        <button id="add-to-cart-btn" class="btn" type="button" data-bs-toggle="modal" data-bs-target="#popupdualeo">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5" viewBox="0 0 576 512">
+                                <path fill="black" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                            </svg>
+                            <span>MUA</span>
+                        </button>
+                            
+                    </div>
+                    
+                </div>
+                <div class="product-description">
+                    <p>
+                        Với mousse sô-cô-la đen đậm vị kết hợp với mứt dâu rừng nấu chậm và kem ngậy vani Madagascar,<br> 
+                        chiếc bánh vừa ngọt ngào, trầm ấm nhưng lại bùng nổ với vị của những trái dâu rừng chín mọng.
+                    </p>
+                    <br>
+                    <p>
+                        Mang theo những lời chúc tốt đẹp và ngọt ngào nhất, tạo hình lá thư độc đáo trên nền tráng gương 
+                        đỏ rực rỡ, Letter to Santa gợi lên cảm giác ấm áp và đầy hi vọng. Hãy nhắn với ông già Noel rằng, năm nay bạn đã làm thật tốt.
+                    </p>
+                </div>    
+                <div class="product-description">
+                    
+                    <p><b>Cấu trúc vị bánh</b></p>
+                    
+                    <ul>
+                        <li>Lớp 01: Phủ tráng gương bóng</li>
+                        <li>Lớp 02: Kem mousse sô-cô-la đen</li>
+                        <li>Lớp 03: Bạt bánh sô-cô-la đen mềm</li>
+                        <li>Lớp 04: Mứt dâu rừng nấu chậm</li>
+                        <li>Lớp 05: Kem ngậy vani Madagascar</li>
+                        <li>Lớp 06:  Bạt bánh sô-cô-la đen mềm</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-tabs mt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">KÍCH THƯỚC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">HƯỚNG DẪN SỬ DỤNG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">PHỤ KIỆN ĐÍNH KÈM</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content section-content mt-2" id="myTabContent">
+            <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                <ul>
+                    <li> Đường kính: 18cm </li>
+                    <li>Chiều cao: 5cm</li>
+                    <li>Dành cho 5-10 người ăn</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <ul>
+                        <li>Luôn giữ bánh trong hộp kín & bảo quản trong ngăn mát tủ lạnh</li>
+                        <li>Không nên để bánh ở nhiệt độ phòng quá 30 phút (Bánh sẽ bị chảy)</li>
+                        <li>Sử dụng trong vòng 03 ngày</li>
+                    </ul>
+                    
+                    
+                    
+            </div>
+            
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <ul>
+                    <li>01 Dao cắt bánh</li>
+                    <li>01 Bộ đĩa và dĩa dành cho 10 người</li>
+                    <li>01 Chiếc nến sinh nhật</li>
+                </ul>               
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" style="margin-bottom: 25px;">
+        <h2 style="font-family: Signika, sans-serif;"><b>Gợi ý phụ kiện cho bạn</b></h2>
+        <div class="food-container">
+            <button class="scroll-btn left" onclick="customscrollLeft()">&#10094;</button>
+            <div class="food-scroll">
+                <div class="food-item"><a href=""><img src="images/phuKien/1.avif" ><p>Thiệp Let's Cheer</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/2.avif" ><p>Thiệp Merry Christmas</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/3.avif" ><p>Thiệp Greatest Gift</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/4.avif" ><p>Topper Happy Birthday</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/5.avif"><p>Topper Congratulations</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/7.avif" ><p>Thiệp Let's Match</a></p></div>
+                <div class="food-item"><a href=""><img src="images/phuKien/8.avif" ><p>Thiệp Birthday Cake</a></p></div>
+            </div>
+            <button class="scroll-btn right" onclick="customscrollRight()">&#10095;</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/dualeotini.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- FOOTER -->
     <footer>
         <div class="footer-container">
@@ -278,11 +380,6 @@
           </p>
         </div>
       </footer>
-    <div id="overlay"></div>
     <script src="js/header.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 </html>

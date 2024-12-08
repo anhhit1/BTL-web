@@ -34,41 +34,37 @@
 }
 
 .product-title h2 {
-    color: #1F6D39;
+    color: #A6705B;
     font-weight: bold;
-    font-family: "Roboto",sans-serif;
-    font-size: 28px;
+    font-family: "Signika", sans-serif;;
+    font-size: 60px;
     margin: 0;
 }
 .product-title{
-    border-bottom: 1px solid #388e3c;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 40px;
+    height: 150px;
 }
 
 .product-description {
     margin-bottom: 30px !important;
     line-height: 1.6;
+    font-family: "Signika", sans-serif;;
 }
-.col-md-8{
+.col-md-7{
     padding-left:40px;
+    background-color: #f0f0f0;
+    border-radius: 35px;
 }
 
-.col-md-8 ul{
+.col-md-7 ul{
     padding-left: 60px;
     margin-top: 20px;
 }
 
-#add-to-cart-btn {
-    background: radial-gradient(circle, #126216, #319f36,#8fd124);
-    animation: gradientAnimation 7s ease infinite;
-    background-size: 500% ;
-    color: white;
-    padding:5px 70px;
-    font-weight: 700;
-    width: 250px;
-}
+
+
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -80,36 +76,34 @@
         background-position: 0% 50%;
     }
 }
-#add-to-cart-btn:hover {
-    background-color: #479f00;
-    color: white;
-    
-}
-.special-offer h4{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    border-bottom: 1px rgb(206, 204, 204) dashed;
-    padding-bottom: 5px;
-}
-.special-offer p{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.special-offer{
-    padding:5px 10px;
-    border:rgb(254, 223, 67) 1px solid;
-    width: 250px;
-    text-align: center;
-    margin-top:10px;
+#add-to-cart-btn {
+    display: inline-flex; /* Đặt biểu tượng và chữ nằm trên cùng một hàng */
+    justify-content: center;
+    align-items: center; /* Căn giữa biểu tượng và chữ theo chiều dọc */
+    gap: 8px; /* Khoảng cách giữa biểu tượng và chữ */
+    padding: 8px 12px; /* Thêm khoảng cách bên trong nút */
+    background-color: #F6F6F6; /* Màu nền cho nút (tuỳ chọn) */
+    border: none; /* Bỏ đường viền */
+    color: #000000; /* Màu chữ */
+    border-radius: 4px; /* Bo góc nút */
+    cursor: pointer;
+    border: #000000 2px solid;
+    margin-right: 250px;
+    margin-top: 10px;
 }
 
-.share{
-    font-size: 13px;
-    font-weight: normal;
-    color:rgb(34, 135, 249);
-    margin-top: 10px !important;
+#add-to-cart-btn svg {
+    height: 20px; /* Đảm bảo kích thước biểu tượng */
+    width: 20px;
 }
+
+#add-to-cart-btn span {
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold;
+}
+
+
+
 .section-tabs {
     justify-content: center;
     display: flex;
@@ -125,8 +119,20 @@
     color: #f28123;
 }
 .section-content {
-    background-color: #fff4e6;
+    background-color: #F6F6F6;
+    border-radius: 15px;
     padding: 15px;
+    margin-bottom: 20px;
+    width: 700px;
+    margin-left: 22%; /* Chỉ áp dụng trên màn hình lớn */
+}
+
+@media (max-width: 768px) { /* Quy tắc cho màn hình nhỏ */
+    .section-content {
+        margin-left: auto; /* Tự động căn giữa */
+        margin-right: auto; /* Tự động căn giữa */
+        width: 90%; /* Chiều rộng chiếm 90% màn hình */
+    }
 }
 
 .nav-link {
@@ -152,6 +158,7 @@
 }
 ul{
     list-style: none;
+    font-family: "Signika", sans-serif;;
 }
 .tab-pane >p{
     margin-top: 5px !important;
@@ -197,17 +204,20 @@ ul{
   }
   
   .food-item img {
-    width: 100%;
+    width: 210px;
     height: 306.1px;
     display: block;
+    border-radius: 20px;
+    background-color: #F6F6F6;
   }
   
   .scroll-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #f1f1f1;
-    border: none;
+    background-color: #ffffff;
+    border: 1.5px solid black;
+    border-radius: 30px;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
@@ -228,6 +238,8 @@ ul{
     color: white; 
     width: 100%; 
     padding: 10px 0; 
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 .similar-products{
     margin-top: 60px;
@@ -265,30 +277,11 @@ ul{
     justify-content: space-around;
     align-items: center;
   }
-  
-  .special-offer {
-    color: red; 
-    font-weight: bold;
-  }
-  @keyframes show{
-    0%{
-        color:red;
-    }
-    25%{
-        color:#f28123;
-    }
-    50%{
-        color:#479f00;
-    }
-    75%{
-        color:purple;
-    }
-    100%{
-        color:rgb(34, 135, 249)
-    }
-  }
-  .special-offer h4{
-    animation: show 1s infinite;
+
+  .fw-bold-re{
+    font-family: "Signika", sans-serif;
+    padding-top: 5px;
+    font-size: 20px;
   }
   .modal{
     font-family: Arial, Helvetica, sans-serif;
@@ -325,7 +318,7 @@ ul{
 }
 
 .modal-footer .btn{
-    background-color: var(--productname--color);
+    background-color: #8d5d31;
    width: 100%;
    line-height: 15px;
    color:white;
@@ -338,4 +331,26 @@ ul{
     margin-right: 20px; }
 .modal-header span{
     cursor: pointer;
+}
+
+.d-flex{
+    flex-direction: row;
+    justify-content: center;
+}
+.food-scroll a{
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: row; /* Xếp chồng các phần tử */
+        align-items: center; /* Căn trái các phần tử */
+    }
+
+    #add-to-cart-btn {
+        width: 100%; /* Nút sẽ chiếm toàn bộ chiều rộng */
+        text-align: center;
+    }
+
+   
 }
