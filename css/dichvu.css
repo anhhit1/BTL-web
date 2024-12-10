@@ -15,7 +15,7 @@ li {
     /* Chiều cao toàn màn hình */
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(../images/dichvu-bg.jpg);
+        url(../images/cake-shadow.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,9 +70,9 @@ li {
 }
 
 .hero__content ul li:first-child:after {
-    content: "||";
-    margin-left: 28px;
-    margin-right: 24px;
+    content: "";
+    margin-left: 20px;
+    margin-right: 28px;
 }
 
 .hero__content-list li a {

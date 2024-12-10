@@ -185,6 +185,7 @@ a {
 }
 .nav__overlay {
   position: fixed;
+  
   top: 0;
   right: 0;
   bottom: 0;
@@ -228,6 +229,7 @@ a {
   margin-left: 1.4rem;
   padding: 14px 0;
   font-weight: bold;
+  font-family: "Signika", sans-serif;
   /* font-size: 1.4 rem; */
 }
 #main-menu__mobile li {
@@ -239,7 +241,7 @@ a {
   margin-left: 1.4rem;
   width: 80%;
   height: 1px;
-  background-color: #7dc642;
+  background-color: #478922;
   position: absolute;
   bottom: 0;
   left: 0;
