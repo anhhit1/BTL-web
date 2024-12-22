@@ -8,7 +8,7 @@ a:has(.fa-solid.fa-angle-right) {
   font-family: "Signika", sans-serif;
 }
 .blog {
-  background-color: #f5faed;
+  background-color: #f6efea;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -47,7 +47,7 @@ a:has(.fa-solid.fa-angle-right) {
   border-radius: 50px;
   border: none;
   display: block;
-  background-color: #7dc642;
+  background-color: #4d4637;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -56,7 +56,7 @@ a:has(.fa-solid.fa-angle-right) {
   transition: 0.2s ease-in;
 }
 .content-blog a:hover {
-  background-color: #579624;
+  background-color: #918771;
   transition: 0.2s ease-in-out;
 }
 .content-blog:nth-of-type(1) h3,
