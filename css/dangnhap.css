@@ -42,7 +42,7 @@ span{
     transition: 0.3s ease-in-out;
 }
 a:hover{
-    color:#7dc642;
+    color:#3d2b24;
 }
 .content{
    display: flex;
@@ -58,7 +58,7 @@ a:hover{
     justify-content: center;
 }
 .content input{
-    accent-color: #7dc642;
+    accent-color: #3d2b24;
     width: 12px;
     height: 12px;
 }
@@ -70,8 +70,8 @@ a:hover{
 button{
     position: relative;
     border-radius: 20px;
-    border: 1px solid #7dc642;
-    background-color: #7dc642;
+    border: 1px solid #3d2b24;
+    background-color: #3d2b24;
     color: #fff;
     font-size: 15px;
     font-weight: 700;
@@ -89,7 +89,7 @@ button:active{
 }
 button.ghost{
     background-color: rgba(255,255,255,0.2);
-    border: 2px solid #7dc642;
+    border: 2px solid #3d2b24;
 }
 button.ghost svg{
     position: absolute;
@@ -186,7 +186,7 @@ input{
     transform: translate(-100%);
 }
 .overlay{
-    background-image: url('../images/login.gif');
+    background-image: url('../images/loginviet.gif');
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 0 0;
@@ -207,7 +207,7 @@ input{
     bottom: 0;
     background: linear-gradient(
         to top,
-        rgba(32, 106, 37, 0.4) 40%,
+        rgba(75, 42, 12, 0.4) 40%,
         rgba(46,94,109, 0) 
     );
 } 
@@ -254,5 +254,5 @@ input{
     transition: 0.3s ease-in-out;
 }
 .social-container a:hover{
-    border: 1px solid #7dc642;
+    border: 1px solid #3d2b24 ;
 }
