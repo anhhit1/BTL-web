@@ -158,17 +158,17 @@
     let cartItems = [
         {
             id: 1,
-            name: "LettertoSanta",
+            name: "Letter to Santa",
             price: 735000,
             quantity: 1
         },
 
-        {
-            id: 2,
-            name: "Mangopaco",
-            price: 445000,
-            quantity: 1
-        }
+    //    {
+    //      id: 2,
+    //        name: "Mangopaco",
+    //        price: 445000,
+    //       quantity: 1
+    //    }
     ];
 
     // Hàm để hiển thị danh sách sản phẩm trong giỏ hàng
@@ -178,7 +178,7 @@
 
         if (cartItems.length === 0) {
             // Nếu không có sản phẩm, hiển thị nút đi đến trang mua hàng
-            cartItemsDiv.innerHTML = '<p>Đến trang mua hàng <a href="../sanpham.html" class="text-blue-500">tại đây</a></p>';
+            cartItemsDiv.innerHTML = '<p>Đến trang mua hàng <a href="sanpham.html" class="text-blue-500">tại đây</a></p>';
         } else {
             // Nếu có sản phẩm, hiển thị từng sản phẩm
             cartItems.forEach(item => {
@@ -190,8 +190,8 @@
                         <a href="javascript:void(0);" onclick="removeCartItem(${item.id})" class="text-blue-500">Xóa</a>
                     </div>
                     <div class="item-product-cart-mobile ml-10">
-                        <a href="sanPham-letterToSanta.html">
-                            <img src="image/banhsinhnhat1.avif" alt="${item.name}" class="w-16 h-16 object-cover rounded-full">
+                        <a href="./sanPham-letterToSanta.html">
+                            <img src="./images/banhsinhnhat1.avif" alt="${item.name}" class="w-16 h-16 object-cover rounded-full">
                         </a>
                     </div>
                     <div class="ml-10">
